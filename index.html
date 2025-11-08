@@ -2,21 +2,25 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFGSZLNRPR"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PFGSZLNRPR"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-PFGSZLNRPR');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PFGSZLNRPR");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>
-      Shivom Designs | Best Interior Designer in Ahmedabad | Home &
-      Commercial
+      Shivom Designs | Best Interior Designer in Ahmedabad | Home & Commercial
     </title>
 
     <meta
@@ -67,7 +71,13 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -139,120 +149,153 @@
       #mobile-menu.open {
         max-height: 500px; /* Adjust if your menu is taller */
       }
-      
     </style>
     <link rel="stylesheet" href="./styles_4.css" />
   </head>
   <body class="text-gray-800 bg-[#F8F8F8]">
     <header class="fixed top-0 left-0 right-0 z-50 bg-[#F8F8F8] shadow-md">
-        <div class="container mx-auto max-w-7xl px-4 sm:px-6 py-4 lg:py-5">
-          <nav id="main-nav" class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <div class="w-3 h-3 bg-[#F9A826] rounded-full"></div>
-              <a href="#home" class="text-xl sm:text-2xl font-bold tracking-wider"
-                >ShivOm Designs</a
-              >
-            </div>
-  
-            <div
-              class="hidden lg:flex items-center gap-10 text-gray-700 font-medium"
+      <div class="container mx-auto max-w-7xl px-4 sm:px-6 py-4 lg:py-5">
+        <nav id="main-nav" class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 bg-[#F9A826] rounded-full"></div>
+            <a href="#home" class="text-xl sm:text-2xl font-bold tracking-wider"
+              >ShivOm Designs</a
             >
-              <a
-                href="#home"
-                class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
-                >Home</a
-              >
-              <a
-                href="#services"
-                class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
-                >Services</a
-              >
-              <a
-                href="#about"
-                class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
-                >About</a
-              >
-              <a
-                href="#projects"
-                class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
-                >Projects</a
-              >
-              <a
-                href="#contact"
-                class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
-                >Contact</a
-              >
-              <a
-                href="#faq"
-                class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
-                >FAQ</a
-              >
-            </div>
-  
-            <div class="hidden lg:block">
-              <a
-                href="#contact"
-                class="bg-gray-700 text-white font-bold px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cta-quote"
-              >
-                Get Free Quote
-              </a>
-            </div>
-  
-            <!-- ===== UPDATED HAMBURGER/CLOSE BUTTON ===== -->
-            <div class="lg:hidden">
-              <button id="mobile-menu-button" class="focus:outline-none" aria-label="Toggle menu">
-                  <!-- Original Hamburger Icon -->
-                  <svg id="hamburger-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-                  <!-- Simple X (Close) Icon - Hidden by default -->
-                  <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-              </button>
-            </div>
-          </nav>
-          
-          <!-- ===== UPDATED MOBILE MENU CONTAINER ===== -->
+          </div>
+
           <div
-            id="mobile-menu"
-            class="lg:hidden mt-4 bg-white rounded-lg shadow-lg"
+            class="hidden lg:flex items-center gap-10 text-gray-700 font-medium"
           >
-            <a href="#home" class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            <a
+              href="#home"
+              class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
               >Home</a
             >
             <a
               href="#services"
-              class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+              class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
               >Services</a
             >
-            <a href="#about" class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            <a
+              href="#about"
+              class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
               >About</a
             >
             <a
               href="#projects"
-              class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+              class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
               >Projects</a
             >
             <a
               href="#contact"
-              class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+              class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
               >Contact</a
             >
-            <a href="#faq" class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            <a
+              href="#faq"
+              class="transition-colors relative font-medium duration-300 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#2c5f5d] after:transition-all hover:after:w-full"
               >FAQ</a
             >
-            <div class="p-4">
-              <a
-                href="#contact"
-                class="mobile-nav-link block text-center bg-gray-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cta-quote"
+          </div>
+
+          <div class="hidden lg:block">
+            <a
+              href="#contact"
+              class="bg-gray-700 text-white font-bold px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cta-quote"
+            >
+              Get Free Quote
+            </a>
+          </div>
+
+          <!-- ===== UPDATED HAMBURGER/CLOSE BUTTON ===== -->
+          <div class="lg:hidden">
+            <button
+              id="mobile-menu-button"
+              class="focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <!-- Original Hamburger Icon -->
+              <svg
+                id="hamburger-icon"
+                class="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Get Free Quote
-              </a>
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+              <!-- Simple X (Close) Icon - Hidden by default -->
+              <svg
+                id="close-icon"
+                class="w-7 h-7 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- ===== UPDATED MOBILE MENU CONTAINER ===== -->
+        <div
+          id="mobile-menu"
+          class="lg:hidden mt-4 bg-white rounded-lg shadow-lg"
+        >
+          <a
+            href="#home"
+            class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            >Home</a
+          >
+          <a
+            href="#services"
+            class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            >Services</a
+          >
+          <a
+            href="#about"
+            class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            >Contact</a
+          >
+          <a
+            href="#faq"
+            class="mobile-nav-link block px-6 py-3 text-gray-600 hover:bg-gray-50"
+            >FAQ</a
+          >
+          <div class="p-4">
+            <a
+              href="#contact"
+              class="mobile-nav-link block text-center bg-gray-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cta-quote"
+            >
+              Get Free Quote
+            </a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
     <main>
       <section id="home" class="pt-28 md:pt-32">
@@ -262,10 +305,10 @@
               <h1
                 class="text-4xl sm:text-5xl md:text-6xl font-serif lg:leading-none"
               >
-              <span class="font-bold"
-              >Elevate Your <br />
-              Home
-              </span>
+                <span class="font-bold"
+                  >Elevate Your <br />
+                  Home
+                </span>
                 with Elegant, <br />
                 <span class="font-bold">Personalized<br /></span>
                 Interior Design
@@ -388,15 +431,14 @@
       <section id="services" class="py-16 md:py-24">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
           <div class="text-center mb-12">
-            <h2
-              class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif"
-            >
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
               OUR SERVICES
             </h2>
-            <p class="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-gray-600">
+            <p
+              class="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-gray-600"
+            >
               Transform your space with our expert interior design services,
-              where creativity meets functionality to bring your vision to
-              life.
+              where creativity meets functionality to bring your vision to life.
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -485,8 +527,8 @@
                 Healthcare Interior Design
               </h3>
               <p class="text-gray-600">
-                Interiors for hospitals and clinics with an emphasis on
-                hygiene, safety, and patient comfort.
+                Interiors for hospitals and clinics with an emphasis on hygiene,
+                safety, and patient comfort.
               </p>
             </div>
           </div>
@@ -496,9 +538,7 @@
       <section id="about" class="py-16 md:py-24">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
           <div class="text-center mb-12 md:mb-16">
-            <h2
-              class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif"
-            >
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
               THE VISION BEHIND THE DESIGN
             </h2>
             <p
@@ -511,7 +551,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <img
-                src="assets/founder.jpg"
+                src="assets shivom/founder.jpg"
                 alt="The founders of the interior design studio"
                 class="rounded-2xl shadow-lg w-full h-full object-cover"
                 loading="lazy"
@@ -533,7 +573,7 @@
                   class="bg-gray-50 p-4 rounded-xl shadow-sm text-center border border-gray-200"
                 >
                   <h3 class="text-2xl sm:text-3xl font-bold text-[#F9A826]">
-                    30,000+ 
+                    30,000+
                   </h3>
                   <p class="text-gray-600 text-sm font-medium">sq ft</p>
                 </div>
@@ -595,16 +635,14 @@
       <section id="projects" class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
           <div class="text-center mb-12">
-            <h2
-              class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif"
-            >
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
               OUR PROJECTS
             </h2>
             <p
               class="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-gray-600"
             >
-              From concept to completion, we offer comprehensive interior
-              design services to fit every style and budget.
+              From concept to completion, we offer comprehensive interior design
+              services to fit every style and budget.
             </p>
           </div>
 
@@ -638,37 +676,36 @@
               >
                 Retail
               </button>
-              
             </div>
 
             <div class="flex-1 relative">
               <div
                 class="relative overflow-hidden rounded-2xl bg-white shadow-lg"
               >
-              <div
-              class="hidden absolute top-4 left-4 bg-white rounded-full p-2 items-center gap-2 z-10 shadow-md"
-            >
-              <div
-                class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold"
-              >
-                SD
-              </div> 
-              <div>
-                <div id="designerName" class="font-semibold text-sm">
-                  {/* Populated by JS */}
+                <div
+                  class="hidden absolute top-4 left-4 bg-white rounded-full p-2 items-center gap-2 z-10 shadow-md"
+                >
+                  <div
+                    class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold"
+                  >
+                    SD
+                  </div>
+                  <div>
+                    <div id="designerName" class="font-semibold text-sm">
+                      {/* Populated by JS */}
+                    </div>
+                    <div id="designerRole" class="text-xs text-gray-500">
+                      Interior Designer
+                    </div>
+                  </div>
                 </div>
-                <div id="designerRole" class="text-xs text-gray-500">
-                  Interior Designer
-                </div>
-              </div>
-              </div>
 
                 <div id="imageContainer" class="relative">
                   <img
                     id="mainImage"
                     src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&h=600&fit=crop"
                     alt="Modern office space"
-                    class="rounded-2xl transition-opacity duration-300 ease-in-out w-full h-auto aspect-[4/3] md:aspect-auto md:h-[500px] object-cover"
+                    class="rounded-2xl ease-in-out w-full h-auto aspect-[4/3] md:aspect-auto md:h-[500px] object-cover"
                     loading="lazy"
                   />
                 </div>
@@ -720,9 +757,7 @@
       <section id="faq" class="py-16 md:py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
           <div class="text-center mb-12 md:mb-16">
-            <h2
-              class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif"
-            >
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
               Frequently Asked Questions
             </h2>
             <p
@@ -887,9 +922,7 @@
       <section id="contact" class="py-16 md:py-24 bg-[#F8F8F8]">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
           <div class="text-center mb-12 md:mb-16">
-            <h2
-              class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif"
-            >
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
               Get In Touch
             </h2>
             <p
@@ -1015,80 +1048,93 @@
             </div>
 
             <div class="flex flex-col gap-8">
-                
               <div
-                      class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100"
+                class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100"
+              >
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                  Contact Information
+                </h3>
+                <div class="space-y-4 text-gray-600">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-[#F9A826]/20 text-[#F9A826] rounded-full flex items-center justify-center mt-1"
                     >
-                      <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                        Contact Information
-                      </h3>
-                      <div class="space-y-4 text-gray-600">
-                        <div class="flex items-start gap-4">
-                          <div
-                            class="flex-shrink-0 w-8 h-8 bg-[#F9A826]/20 text-[#F9A826] rounded-full flex items-center justify-center mt-1"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-5 w-5"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                clip-rule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 class="font-semibold text-gray-800">Address</h4>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Vastrapur,+Ahmedabad,+Gujarat,+380015,+IN" target="_blank" rel="noopener noreferrer" class="hover:text-[#F9A826] transition-colors">Vastrapur, Ahmedabad, Gujarat, 380015, IN</a>
-                          </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                          <div
-                            class="flex-shrink-0 w-8 h-8 bg-[#F9A826]/20 text-[#F9A826] rounded-full flex items-center justify-center mt-1"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-5 w-5"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 class="font-semibold text-gray-800">Phone</h4>
-                            <a href="tel:+919106161487" class="hover:text-[#F9A826] transition-colors">+91-9106161487</a>
-                          </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                          <div
-                            class="flex-shrink-0 w-8 h-8 bg-[#F9A826]/20 text-[#F9A826] rounded-full flex items-center justify-center mt-1"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-5 w-5"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                              />
-                              <path
-                                d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 class="font-semibold text-gray-800">Email</h4>
-                            <a href="mailto:Shivomdesigns21@gmail.com" class="hover:text-[#F9A826] transition-colors">Shivomdesigns21@gmail.com</a>
-                          </div>
-                        </div>
-                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800">Address</h4>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=Vastrapur,+Ahmedabad,+Gujarat,+380015,+IN"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:text-[#F9A826] transition-colors"
+                        >Vastrapur, Ahmedabad, Gujarat, 380015, IN</a
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-[#F9A826]/20 text-[#F9A826] rounded-full flex items-center justify-center mt-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800">Phone</h4>
+                      <a
+                        href="tel:+919106161487"
+                        class="hover:text-[#F9A826] transition-colors"
+                        >+91-9106161487</a
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex-shrink-0 w-8 h-8 bg-[#F9A826]/20 text-[#F9A826] rounded-full flex items-center justify-center mt-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                        />
+                        <path
+                          d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800">Email</h4>
+                      <a
+                        href="mailto:Shivomdesigns21@gmail.com"
+                        class="hover:text-[#F9A826] transition-colors"
+                        >Shivomdesigns21@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div
@@ -1228,7 +1274,9 @@
               key cities like Ahmedabad, Gandhinagar, Jodhpur, Jaipur, and
               Udaipur.
             </p>
-            <div class="mt-4 flex flex-col space-y-2 items-center md:items-start">
+            <div
+              class="mt-4 flex flex-col space-y-2 items-center md:items-start"
+            >
               <a
                 href="tel:+919106161487"
                 class="inline-flex items-center text-gray-300 hover:text-[#F9A826] transition-colors font-medium"
@@ -1287,26 +1335,27 @@
       </div>
     </footer>
 
-    <div class="fixed bottom-4 right-4 md:bottom-5 md:right-5 flex flex-col items-center gap-3 z-50">
-  
-        <a 
-          href="tel:+919106161487" 
-          class="flex items-center justify-center  w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-[#34b7f1] text-white shadow-lg transition-transform hover:scale-110 lg:hidden" 
-          aria-label="Call Now"
-          title="Call Now"
-        >
-          <i class="fa-solid fa-phone text-lg md:text-2xl"></i>
-        </a>
-        
-        <button 
-          id="waFab"
-          class="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-[#25d366] text-white shadow-lg transition-transform hover:scale-110"
-          aria-label="Open WhatsApp chat"
-          title="Chat on WhatsApp"
-        >
-          <i class="fa-brands fa-whatsapp text-3xl md:text-4xl"></i>
-        </button>
-      </div>
+    <div
+      class="fixed bottom-4 right-4 md:bottom-5 md:right-5 flex flex-col items-center gap-3 z-50"
+    >
+      <a
+        href="tel:+919106161487"
+        class="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-[#34b7f1] text-white shadow-lg transition-transform hover:scale-110 lg:hidden"
+        aria-label="Call Now"
+        title="Call Now"
+      >
+        <i class="fa-solid fa-phone text-lg md:text-2xl"></i>
+      </a>
+
+      <button
+        id="waFab"
+        class="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-[#25d366] text-white shadow-lg transition-transform hover:scale-110"
+        aria-label="Open WhatsApp chat"
+        title="Chat on WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp text-3xl md:text-4xl"></i>
+      </button>
+    </div>
 
     <section
       class="wa-window transition-all duration-300 ease-in-out"
@@ -1318,9 +1367,7 @@
         <div
           class="wa-avatar"
           id="waAvatar"
-          style="
-            background-image: url('assets/shivom-logo.jpg');
-          "
+          style="background-image: url('assets%20shivom/shivom-logo-new-1.png')"
         ></div>
         <div class="wa-title">
           <div class="wa-name" id="waName">Interior Design Consultant</div>
@@ -1401,10 +1448,4 @@
 
     <script src="./script.js" defer></script>
   </body>
-
 </html>
-
-
-
-
-

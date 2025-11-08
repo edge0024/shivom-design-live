@@ -8,34 +8,38 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 
   const toggleMenu = () => {
-      const isOpen = mobileMenu.classList.toggle("open");
-      hamburgerIcon.classList.toggle("hidden", isOpen);
-      closeIcon.classList.toggle("hidden", !isOpen);
+    const isOpen = mobileMenu.classList.toggle("open");
+    hamburgerIcon.classList.toggle("hidden", isOpen);
+    closeIcon.classList.toggle("hidden", !isOpen);
   };
 
   if (mobileMenuButton) {
-      mobileMenuButton.addEventListener("click", (e) => {
-          e.stopPropagation(); // Prevent click from bubbling up to the document
-          toggleMenu();
-      });
+    mobileMenuButton.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent click from bubbling up to the document
+      toggleMenu();
+    });
   }
 
-  mobileNavLinks.forEach(link => {
-      link.addEventListener("click", () => {
-          if (mobileMenu.classList.contains("open")) {
-              toggleMenu();
-          }
-      });
+  mobileNavLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (mobileMenu.classList.contains("open")) {
+        toggleMenu();
+      }
+    });
   });
 
   // Click outside to close
   document.addEventListener("click", (event) => {
-      const isClickInsideNav = mainNav.contains(event.target);
-      const isClickInsideMenu = mobileMenu.contains(event.target);
-      
-      if (!isClickInsideNav && !isClickInsideMenu && mobileMenu.classList.contains("open")) {
-          toggleMenu();
-      }
+    const isClickInsideNav = mainNav.contains(event.target);
+    const isClickInsideMenu = mobileMenu.contains(event.target);
+
+    if (
+      !isClickInsideNav &&
+      !isClickInsideMenu &&
+      mobileMenu.classList.contains("open")
+    ) {
+      toggleMenu();
+    }
   });
 
   // Hero Carousel Functionality
@@ -67,146 +71,133 @@ document.addEventListener("DOMContentLoaded", function () {
   const galleryData = {
     residential: [
       {
-        url: "assets shivom/residential/Daughters room bed.png",
+        url: "assets shivom/residential/1masterBedroom.webp",
         designer: "Residential Design",
         role: "Interior Designer",
-        alt: "Cozy modern bedroom",
+        alt: "master Bedroom",
       },
       {
-        url: "assets shivom/residential/Feature Wall.png",
+        url: "assets shivom/residential/2DaughersBedroom.webp",
         designer: "Residential Design",
         role: "Interior Designer",
-        alt: "feature wall",
+        alt: "Bedroom Daugher",
       },
       {
-        url: "assets shivom/residential/Kitchen.png",
+        url: "assets shivom/residential/3LivingRoom.webp",
         designer: "Residential Design",
         role: "Interior Designer",
-        alt: "Bright kitchen ",
+        alt: "Living Room",
       },
       {
-        url: "assets shivom/residential/master bedroom.JPG",
+        url: "assets shivom/residential/3.5Kitchen.webp",
         designer: "Residential Design",
         role: "Interior Designer",
-        alt: "master bedroom",
+        alt: "Kitchen",
       },
       {
-        url: "assets shivom/residential/Tv Unit.png",
+        url: "assets shivom/residential/4featureWall.png",
         designer: "Residential Design",
         role: "Interior Designer",
-        alt: "tv unit",
+        alt: "featureWall",
+      },
+      {
+        url: "assets shivom/residential/5TvUnit.png",
+        designer: "Residential Design",
+        role: "Interior Designer",
+        alt: "Tv Unit",
+      },
+      {
+        url: "assets shivom/residential/6DinningTable.webp",
+        designer: "Residential Design",
+        role: "Interior Designer",
+        alt: "Dinning Table",
+      },
+      {
+        url: "assets shivom/residential/7Kitchen.png",
+        designer: "Residential Design",
+        role: "Interior Designer",
+        alt: "kitchen",
       },
     ],
     commercial: [
       // ... (your other categories like residential, etc.)
-      
+
       {
-        url : "assets shivom/commercial/Cabin waiting area.webp",
+        url: "assets shivom/commercial/1cafespace.webp",
         designer: "Commercial Design",
         role: "Interior Designer",
-        alt: "cabin waiting area",
+        alt: "cafe space",
       },
       {
-        url : "assets shivom/commercial/Cabin.webp",
+        url: "assets shivom/commercial/2 Cabin.webp",
         designer: "Commercial Design",
         role: "Interior Designer",
         alt: "cabin ",
       },
       {
-        url : "assets shivom/commercial/luxury Cabin.webp",
+        url: "assets shivom/commercial/2.5 luxury Cabin.webp",
         designer: "Commercial Design",
         role: "Interior Designer",
         alt: "luxury cabin",
       },
       {
-        url : "assets shivom/commercial/MD cabin.webp",
+        url: "assets shivom/commercial/3officeEntrance.webp",
         designer: "Commercial Design",
         role: "Interior Designer",
-        alt: "MD cabin",
+        alt: "office Entrance",
       },
       {
-        url : "assets shivom/commercial/office space.webp",
+        url: "assets shivom/commercial/3.5 workspace.webp",
         designer: "Commercial Design",
         role: "Interior Designer",
-        alt: "office space",
+        alt: "office workspace",
       },
       {
-        url : "assets shivom/commercial/Office.webp",
+        url: "assets shivom/commercial/4 Reception.webp",
         designer: "Commercial Design",
         role: "Interior Designer",
-        alt: "office",
+        alt: "Reception",
       },
-      {
-        url : "assets shivom/commercial/Reception.webp",
-        designer: "Commercial Design",
-        role: "Interior Designer",
-        alt: "reception",
-      },
-      {
-        url : "assets shivom/commercial/workspace.webp",
-        designer: "Commercial Design",
-        role: "Interior Designer",
-        alt: "workspace",
-      },
+
       // ... (your other project objects for other categories)
     ],
     healthcare: [
       {
-        url: "assets shivom/healthcare/Operation Theater.webp",
+        url: "assets shivom/healthcare/1hospitalLobby.webp",
         designer: "Healthcare Design",
         role: "Interior Designer",
-        alt: "operation theater",
+        alt: "hospital Lobby",
       },
       {
-        url: "assets shivom/healthcare/patient room.webp",
+        url: "assets shivom/healthcare/2hospitalSuitroom.webp",
+        designer: "Healthcare Design",
+        role: "Interior Designer",
+        alt: "Hospital Suitroom",
+      },
+      {
+        url: "assets shivom/healthcare/3OperationTheater.webp",
+        designer: "Healthcare Design",
+        role: "Interior Designer",
+        alt: "Operation theater ",
+      },
+      {
+        url: "assets shivom/healthcare/4patient room.webp",
         designer: "Healthcare Design",
         role: "Interior Designer",
         alt: "patient room",
       },
       {
-        url: "assets shivom/healthcare/SuitRoom.webp",
-        designer: "Healthcare Design",
-        role: "Interior Designer",
-        alt: "SuitRoom ",
-      },
-      {
-        url: "assets shivom/healthcare/care Room.webp",
-        designer: "Healthcare Design",
-        role: "Interior Designer",
-        alt: "care room",
-      },
-      {
-        url: "assets shivom/healthcare/Doctor Cabin.webp",
+        url: "assets shivom/healthcare/5Doctor Cabin.webp",
         designer: "Healthcare Design",
         role: "Interior Designer",
         alt: "doctor cabin",
       },
       {
-        url: "assets shivom/healthcare/Healthcare room.webp",
+        url: "assets shivom/healthcare/6care Room.webp",
         designer: "Healthcare Design",
         role: "Interior Designer",
-        alt: "healthcare care",
+        alt: "care room",
       },
-      {
-        url: "assets shivom/healthcare/Healthcare sofa.webp",
-        designer: "Healthcare Design",
-        role: "Interior Designer",
-        alt: "healthcare sofa",
-      },
-      {
-        url: "assets shivom/healthcare/Hospital premium room.webp",
-        designer: "Healthcare Design",
-        role: "Interior Designer",
-        alt: "hospital premium room",
-      },
-      {
-        url: "assets shivom/healthcare/Hospital room.webp",
-        designer: "Healthcare Design",
-        role: "Interior Designer",
-        alt: "Hospital room",
-      },
-
-      
     ],
     furniture: [
       {
@@ -222,7 +213,6 @@ document.addEventListener("DOMContentLoaded", function () {
         alt: "Modern wooden armchair",
       },
     ],
-    
   };
 
   let currentCategory = "residential";
@@ -240,15 +230,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!images || !mainImage) return;
 
     const currentImageData = images[currentImageIndex];
-    mainImage.style.opacity = "0";
-
-    setTimeout(() => {
-      mainImage.src = currentImageData.url;
-      mainImage.alt = currentImageData.alt;
-      designerNameEl.textContent = currentImageData.designer;
-      designerRoleEl.textContent = currentImageData.role;
-      mainImage.style.opacity = "1";
-    }, 300);
+    mainImage.src = currentImageData.url;
+    mainImage.alt = currentImageData.alt;
+    designerNameEl.textContent = currentImageData.designer;
+    designerRoleEl.textContent = currentImageData.role;
   }
 
   function updateActiveButton(activeButton) {
@@ -370,8 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const PHONE_NUMBER = "918078640646";
 
   // 2. Avatar Image URL
-  const AVATAR_URL =
-    "assets/shivom-logo-new-1.png";
+  const AVATAR_URL = "assets%20shivom/shivom-logo-new-1.png";
 
   // 3. Chat Header Texts
   const CHAT_NAME = "Shivom Designs";
@@ -518,4 +502,3 @@ function validateForm() {
 
   return true;
 }
-
