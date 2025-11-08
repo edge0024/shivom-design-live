@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alt: "Living Room",
       },
       {
-        url: "assets shivom/residential/3.5Kitchen.webp",
+        url: "assets shivom/residential/3.5kitchen.webp",
         designer: "Residential Design",
         role: "Interior Designer",
         alt: "Kitchen",
